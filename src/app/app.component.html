@@ -1,0 +1,20 @@
+<ul>
+  <li><a routerLink="/news">News</a></li>
+  <li><a routerLink="/faq">FAQ</a></li>
+  <li><a routerLink="/concat">Concat</a></li>
+</ul>
+<hr />
+
+<!-- Interpolação -->
+<app-button labelString = "{{ buttonLabel }}"></app-button>
+<app-button labelString = "Avaçar"></app-button>
+
+<!-- Property Bind -->
+<app-button [labelString] = "buttonSecond"></app-button>
+<app-button [labelString] = "'Botão'"></app-button>
+
+<!-- Two way Data Bind -->
+<app-entry-data></app-entry-data>
+
+
+<router-outlet></router-outlet>
